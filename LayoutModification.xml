@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LayoutModificationTemplate
+    xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification"
+    xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout"
+    xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout"
+    xmlns:taskbar="http://schemas.microsoft.com/Start/2014/TaskbarLayout"
+    Version="1"> 
+  <CustomTaskbarLayoutCollection PinListPlacement="Replace">
+    <defaultlayout:TaskbarLayout>
+      <taskbar:TaskbarPinList>
+		<taskbar:DesktopApp DesktopApplicationLinkPath="C:\Program Files\Everything\Everything.exe" />
+		<taskbar:DesktopApp DesktopApplicationLinkPath="C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" />
+		<taskbar:DesktopApp DesktopApplicationLinkPath="C:\Windows\explorer.exe" />
+		<taskbar:DesktopApp DesktopApplicationLinkPath="C:\Program Files\WindowsApps\45273LiamForsyth.PawsforTrello_2.11.7.0_x64__7pb5ddty8z1pa\app\Trello.exe" />
+		<taskbar:DesktopApp DesktopApplicationLinkPath="C:\Program Files\WindowsApps\SpotifyAB.SpotifyMusic_1.141.634.0_x86__zpdnekdrzrea0\Spotify.exe" />
+		<taskbar:DesktopApp DesktopApplicationLinkPath="C:\Program Files (x86)\Notepad++\notepad++.exe" />
+	
+		<taskbar:DesktopApp DesktopApplicationLinkPath="C:\Users\BrandonLee\AppData\Local\Programs\Microsoft VS Code\Code.exe" />
+		<taskbar:DesktopApp DesktopApplicationLinkPath="C:\Program Files (x86)\Royal TS V5\RoyalTS.exe" />
+		<taskbar:DesktopApp DesktopApplicationLinkPath="C:\Program Files\PuTTY\putty.exe" />
+		<taskbar:DesktopApp DesktopApplicationLinkPath="C:\Program Files\Oracle\VirtualBox\VirtualBoxVM.exe" />
+		<taskbar:DesktopApp DesktopApplicationLinkPath="%SystemRoot%\system32\WindowsPowerShell\v1.0\powershell.exe" />
+		<taskbar:DesktopApp DesktopApplicationLinkPath="C:\Program Files\WindowsApps\CanonicalGroupLimited.UbuntuonWindows_2004.2020.812.0_x64__79rhkp1fndgsc\ubuntu.exe" />			
+		<taskbar:DesktopApp DesktopApplicationLinkPath="C:\Program Files\Git\cmd\git-gui.exe" />
+	
+		<taskbar:DesktopApp DesktopApplicationLinkPath="C:\Program Files\REAPER (x64)\reaper.exe" />
+		<taskbar:DesktopApp DesktopApplicationLinkPath="C:\Program Files (x86)\Line6\HX Edit\HX Edit.exe" />
+		<taskbar:DesktopApp DesktopApplicationLinkPath="C:\Program Files\Audionamix\XTRAX STEMS\XTRAX STEMS.exe" />
+		<taskbar:DesktopApp DesktopApplicationLinkPath="C:\Users\BrandonLee\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\Voicemeeter (VB-Audio).LNK" />
+		<taskbar:DesktopApp DesktopApplicationLinkPath="C:\Program Files (x86)\Focusrite\Scarlett MixControl\Scarlett MixControl.exe" />		                		
+		
+		<taskbar:DesktopApp DesktopApplicationLinkPath="C:\Program Files (x86)\Blackmagic Design\DaVinci Resolve Panels\DaVinci Resolve Panels Setup.exe" />
+		
+		<taskbar:DesktopApp DesktopApplicationLinkPath="C:\Program Files\Capture One\Capture One 20\CaptureOne.exe" />
+		<taskbar:DesktopApp DesktopApplicationLinkPath="C:\Program Files (x86)\FUJIFILM\XAcquire\XAcquire.exe" />
+		
+		<taskbar:DesktopApp DesktopApplicationLinkPath="C:\Program Files (x86)\Steam\steamapps\common\rocketleague\Binaries\Win64\RocketLeague.exe" />
+		<taskbar:DesktopApp DesktopApplicationLinkPath="C:\Program Files (x86)\Steam\steam.exe" />
+		<taskbar:DesktopApp DesktopApplicationLinkPath="C:\Users\BrandonLee\AppData\Local\Discord\Update.exe --processStart Discord.exe" />
+				
+		
+      </taskbar:TaskbarPinList>
+    </defaultlayout:TaskbarLayout>
+  </CustomTaskbarLayoutCollection>
+</LayoutModificationTemplate>

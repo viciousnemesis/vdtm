@@ -4,6 +4,8 @@
 cls
 Write-Host "Starting virtual_desktop_taskbar_manager.ps1"
 Set-Location (Split-Path $MyInvocation.MyCommand.Path)
+$layoutLocation = "C:\Users\Default\AppData\Local\Microsoft\Windows\Shell\"
+$layoutFile = "LayoutModification.xml"
 $config_file = ".\config.txt"
 $add_pin = 'c:5386'
 $remove_pin = 'c:5387'
@@ -85,12 +87,28 @@ function Get-Desktop
         
         Get-Content -Path $config.Dexpot_log -Wait | 
         ForEach-Object {
-            if ($_ -match "(?<when>\d{1,2}:\d{1,2}:\d{1,2}).*Desktopwechsel von (?<old_desktop>\d{1,2}) nach (?<new_desktop>\d{1,2}).*") {                                 
-                $desktop.when = $Matches.when                
-                $desktop.old_desktop = $Matches.old_desktop
-                $desktop.new_desktop = $Matches.new_desktop                
-                break                 
-            } 
+            $line = $_
+            switch -regex ($line) {
+                
+                '(?<when>\d{1,2}:\d{1,2}:\d{1,2}).*Desktopwechsel von (?<old_desktop>\d{1,2}) nach (?<new_desktop>\d{1,2}).*'{                                 
+                    $desktop.when = $Matches.when                
+                    $desktop.old_desktop = $Matches.old_desktop
+                    $desktop.new_desktop = $Matches.new_desktop                
+                                 
+                } 
+
+                '(?<when>\d{1,2}:\d{1,2}:\d{1,2}).*Desktopwechsel abgeschlossen.*$' {
+                    #Desktop Change Completed.
+                    $parms = @{'Path' = ($layoutLocation + $layoutFile.Replace('.xml','_'+ $desktop.new_desktop+'.xml'))
+                               'Destination' = ($layoutLocation + $layoutFile);}
+                    
+                    Write-host @parms                               
+                    Copy-Item  @parms
+                    & taskkill /f /im explorer.exe
+                    & Start-Process explorer.exe
+                    break    
+                }
+            }
 
         } | Out-Null
     } while ($false) # dummy loop so that `break` can be used.
