@@ -15,3 +15,7 @@ The current iteration is clunky, but less error prone, and does away with Syspin
 
 1. It would be nice to figure out how to do this without needing the log file, and continuously reading from it. 
 
+
+
+**What it looks like**
+![](demo.gif)
