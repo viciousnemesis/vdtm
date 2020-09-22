@@ -9,11 +9,13 @@ The current iteration is clunky, but less error prone, and does away with Syspin
 
 
 
+
 **Things to do next, if they're possible ;)**
 
 1. Windows kills File Explorer windows when explorer.exe is restarted, and doesn't restore them. The goal would be to keep track of what file explorer windows are open, and on which desktop, and use this to restore as desktops are switch. 
 
 1. It would be nice to figure out how to do this without needing the log file, and continuously reading from it. 
+
 
 
 
