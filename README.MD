@@ -20,4 +20,4 @@ The current iteration is clunky, but less error prone, and does away with Syspin
 
 
 **What it looks like**
-![](.\Demos\demo.gif)
+![](./Demos/demo.gif)
