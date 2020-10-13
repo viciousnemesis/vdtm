@@ -20,5 +20,6 @@ The current iteration is clunky, but less error prone, and does away with Syspin
 
 
 **What it looks like**
+
 Look at the Taskbar icons magically appear after a desktop switch... OOOOoooOoOOo
 ![](./Demos/demo.gif)
