@@ -7,7 +7,7 @@ function Start-VDTM {
 
     Write-Host "Starting VDTM"   
    
-    #Set-Desktop -DesktopNumber 1
+    Set-Desktop -DesktopNumber 1
     
     do {
         Get-DexpotLog              
